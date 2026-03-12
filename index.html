@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- определяем элемент, как иконку, размер и путь к изображению-->
+		<link 
+            rel="icon" 
+			sizes="32x32" 
+			href="icon.jpg" 
+		/>
+		<link rel="stylesheet" href="style.css" /> <!-- подключаем файл стилей -->
+		<title>ВИЗИТКА</title> <!-- заголовок, который отображается во вкладке браузера -->
+
+	</head>
+	<body>
+		<div class="main"> <!-- класс, содержащий всю визитку -->
+			<div class="user_info"> <!-- класс с информацией о пользователе -->
+				<div class="img"> <!-- класс изображения профиля -->
+					<img src="image.jpg" /> <!-- изображение профиля-->
+					<h2>Валерия Витальевна</h2> <!--основной заголовок-->
+					<h5 style="color: hsl(32, 88%, 53%)">Красноярск, Россия</h5> <!-- подзаголовок, стилизованный встроенным CSS -->
+				</div>
+			</div>
+			<div class="links"> <!-- класс для всех кнопок-ссылок -->
+				<div class="links_git"> <!-- класс для кнопки GitHub -->
+					<form action="https://github.com" target="_blank"> <!--форма, которая при отправке перенаправит на GitHub. target="_blank" открывает ссылку в новой вкладке-->
+						<button>GitHub</button> <!-- название кнопки для перехода на GitHub -->
+					</form>
+				</div>
+				<div class="links_tg">
+					<form action="https://t.me/vlerina" target="_blank">
+						<button>Telegram</button>
+					</form>
+				</div>
+				<div class="links_mail">
+					<form action="mailto:vvdyadichkina@fa.ru" target="_blank">
+						<button>ПОЧТА</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
